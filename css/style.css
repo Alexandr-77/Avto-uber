@@ -3,6 +3,7 @@
 body {
    font-family: 'Roboto', sans-serif;
    margin: 0;
+   box-sizing: border-box;
 }
 
 .container {
@@ -275,7 +276,6 @@ body {
    background-color: #070716;
    min-height: 500px;
    position: relative;
-
 }
 .sample__block-1 img {
    max-width: 100%;
@@ -305,10 +305,81 @@ body {
 /* d */
 .sample__text {
    /* background:chartreuse; */
-   margin: 200px 0 0 0;
+   margin: 200px 0;
    text-align: center;
    line-height: 22px;
 }
+/* =========== conditions =========== */
+.conditions h4 {
+   text-align: center;
+}
+.conditions h2 {
+   font-size: 38px;
+   line-height: 48px;
+   font-weight: 700;
+   text-transform: uppercase;
+   color: #222222;
+   margin: 0 0 30px 0;
+   text-align: center;
+}
+.conditions-block {
+   display: flex;
+   flex-wrap: wrap;
+}
+.conditions-block__item {
+   display: block;
+   max-width: 470px;
+   margin: 0 50px;
+   padding-bottom: 40px;
+}
+.conditions-block__item h3 {
+   font-size: 22px;
+   line-height: 24px;
+   font-weight: 400;
+   color: #1ca8c3;
+}
+.conditions-block__item ul {
+   list-style: none;
+   padding: 0 0 0 50px ;
+}
+.conditions-block__item ul li {
+   font-size: 17px;
+   font-weight: 300;
+   color: #222222;
+   margin-bottom: 20px;
+   position: relative;
+}
+.conditions-block__item ul li::before {
+   content: '';
+   display: block;
+   position: absolute;
+   top: 2px;
+   left: -32px;
+   width: 21px;
+   height: 20px;
+   background: url(../img/conditions/conditions_1.png) 0 0 / 100% no-repeat;
+}
+.conditions-block__item-red ul li::before {
+   content: '';
+   display: block;
+   position: absolute;
+   top: 2px;
+   left: -32px;
+   width: 21px;
+   height: 20px;
+   background: url(../img/conditions/conditions_2.png) 0 0 / 100% no-repeat;
+}
+.conditions-block__item-red h3 {
+   color: #ff5656;
+}
+
+.conditions-block__item p {
+   font-size: 17px;
+   font-weight: 300;
+   color: #1ca8c3;
+}
+
+
 
 /* ========= медиа ========== */
 /* ========= медиа ========== */
@@ -387,6 +458,10 @@ body {
    .sample__text {
       /* background:chartreuse; */
       margin: 40px 0 0 0;
+   }
+   .conditions h2 {
+      font-size: 28px;
+      line-height: 28px;
    }
 }
 
